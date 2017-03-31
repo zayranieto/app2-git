@@ -1,0 +1,335 @@
+﻿ <!doctype html>
+  <html>
+   <head>
+   <meta charset="utf-8">
+   <title>Segunda aplicacion</title>
+
+   <!--grupo CSS-->
+   <link rel="stylesheet" href="css/tema-app1.min.css"/>
+   <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+   <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+   <!--grupo JavaScript-->
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/acciones.js"></script>
+   <script src="phonegap.js"></script>
+   
+   <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+   <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+   </script>
+  </head>
+
+ <body onLoad="MM_preloadImages('imagenes/samsungs7.jpg','imagenes/iphone7plus.jpg')">
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"    data-back-btn-theme="a">
+       <h1>TELEFONIA CELULAR </h1>
+     </div>
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>CELULAR SAMSUNG GALAXY S7 EDGE</h1>
+          <div><center>
+           <p>Samsung Galaxy s7 Edge</p></center>
+          </div><center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/samsungs7.jpg',1)"><img src="imagenes/samsungs7edge.jpg" alt="samsungs7" width="50%" height="50%" id="Image4"></a> </div></center>
+      </div>
+       <div>
+       <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>CELULAR IPHONE 7 PLUS</h1>
+        <div><center>
+           <p>iPhone 7 Plus</p></center>
+          </div>
+          <div><center>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/iphone7plus.jpg',1)"><img src="imagenes/iphone7.jpg" alt="iphone7plus" width="50%" height="50%" id="Image5"></a> </div></center>
+        </div>
+       </div>
+         <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+         <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> DEFINICION DE UN TELEFONO CELULAR</h2>
+               <p> Se muestra la definicion de un telefono celular </p>
+            </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+            <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>HISTORIA DE LA TELEFONIA CELULAR</h2>
+               <p>Se muestra la historia de la telefonia celular</p>
+            </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>CLASIFICACION DE LOS CELULARES </h2>
+               <h2>(GAMA ALTA, MEDIA Y BAJA)</h2>
+               <p>Muestra la clasificacion de los celulares</p>
+            </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>COMPAÑIAS QUE OFRECEN TELEFONIA CELULAR EN MEXICO</h2>
+               <p>Muestra las compañias</p>
+            </a>
+        </li>
+        </ul>
+               <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/iphone7.jpg" alt="iphone7" title="iphone7" id="wows1_0"/></li>
+		<li><img src="data1/images/gamamedia.jpg" alt="gamamedia" title="gamamedia" id="wows1_1"/></li>
+		<li><img src="data1/images/samsungs7.jpg" alt="samsungs7" title="samsungs7" id="wows1_2"/></li>
+		<li><img src="data1/images/samsungs7edge.jpg" alt="samsungs7edge" title="samsungs7edge" id="wows1_3"/></li>
+		<li><img src="data1/images/iphone7plus.jpg" alt="iphone7plus" title="iphone7plus" id="wows1_4"/></li>
+		<li><img src="data1/images/motoz.jpg" alt="motoz" title="motoz" id="wows1_5"/></li>
+		<li><img src="data1/images/samsungs7_0.png" alt="samsungs7" title="samsungs7" id="wows1_6"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/samsungs7edge_0.png" alt="http://wowslider.net/" title="samsungs7edge" id="wows1_7"/></a></li>
+		<li><img src="data1/images/nokia.jpg" alt="nokia" title="nokia" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="iphone7"><span><img src="data1/tooltips/iphone7.jpg" alt="iphone7"/>1</span></a>
+		<a href="#" title="gamamedia"><span><img src="data1/tooltips/gamamedia.jpg" alt="gamamedia"/>2</span></a>
+		<a href="#" title="samsungs7"><span><img src="data1/tooltips/samsungs7.jpg" alt="samsungs7"/>3</span></a>
+		<a href="#" title="samsungs7edge"><span><img src="data1/tooltips/samsungs7edge.jpg" alt="samsungs7edge"/>4</span></a>
+		<a href="#" title="iphone7plus"><span><img src="data1/tooltips/iphone7plus.jpg" alt="iphone7plus"/>5</span></a>
+		<a href="#" title="motoz"><span><img src="data1/tooltips/motoz.jpg" alt="motoz"/>6</span></a>
+		<a href="#" title="samsungs7"><span><img src="data1/tooltips/samsungs7_0.png" alt="samsungs7"/>7</span></a>
+		<a href="#" title="samsungs7edge"><span><img src="data1/tooltips/samsungs7edge_0.png" alt="samsungs7edge"/>8</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.jpg" alt="nokia"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         <div>
+           <img src="imagenes/logo.png" width="40" height="40">
+         </div>
+         <div>
+           <h4>Aplicacion Dos</h4>
+           <h4>Zayra Nieto Anaya</h4>
+         </div>
+       </div>
+      </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"     data-back-btn-theme="a">
+         <h1>Definición:</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2>Aparato telefónico de pequeño tamaño, portátil, sin hilos ni cables externos, para poder hablar desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita.</h2>
+            <div data-role="collapsible" data-content-theme="false">
+        <h1>Samsung s7 Edge</h1>
+          <div>
+            <img src="imagenes/samsungs7edge.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+        </div>
+         <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> iPhone 7 Plus</h1>
+          <div>
+            <img src="imagenes/iphone7.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+           <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> Moto z Force</h1>
+          <div>
+            <img src="imagenes/motoz.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+        <div data-role="footer" data-theme"a" data-position="fixed">
+           <div><center>
+           <img src="imagenes/logo.png" width="40" height="40"> </center>
+         </div>
+           <h4>Aplicacion dos, ZNA </h4>
+        </div>
+       </div>
+       
+       
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1> HISTORIA:</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+           <h2>El teléfono celular se remonta a los inicios de la Segunda Guerra Mundial, donde ya se veía que era necesaria la comunicacióna distancia, es por eso que la compañía Motorola creó un equipo llamado Handie Talkie H12-16, que es un equipo que permite el contacto con las tropas vía ondas de radio que en ese tiempo no superaban más de 600 Khz. 
+Fue sólo cuestión de tiempo para que las dos tecnologías de Tesla y Marconi se unieran y dieran a la luz la comunicación mediante radio-teléfonos: Martín Cooper, pionero y considerado como el padre de la telefonía celular, fabricó el primer radio teléfono entre 1970 y 1973, en Estados Unidos, y en 1979 aparecieron los primeros sistemas a la venta en Tokio (Japón), fabricados por la Compañía NTT. Los países europeos no se quedaron atrás y en 1981 se introdujo en Escandinava un sistema similar a AMPS (Advanced Mobile Phone System). </h2></div>
+       </div>
+       
+        <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> Nokia</h1>
+          <div>
+            <img src="imagenes/nokia.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+          
+           <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> Moto z Force</h1>
+          <div>
+            <img src="imagenes/motoz.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+          
+           <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1>  iPhone 7 Plus </h1>
+          <div>
+            <img src="imagenes/iphone7plus.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div> 
+          
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <div><center>
+           <img src="imagenes/logo.png" width="40" height="40"> </center>
+         </div>
+         <h4>Aplicacion Dos, ZNA</h4>
+      </div>
+       </div>
+       </div>
+       
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Clasificacion(Gama alta, media y baja)</h1>
+       </div>
+       <div data-role="content" align="center">
+          <div>
+              <h1>GAMA ALTA</h1>
+             <p>En este nivel encajan los smartphones que estén dotados con casi todos los elementos más evolucionados de la telefonía móvil que citamos anteriormente, pero posiblemente por el sistema operativo u otra causa no cumple de manera completa con cada uno de esos requisitos. Por ejemplo, el gigantesco Samsung Galaxy Mega 6.3 cuenta con características notables, pero llegó con procesador de doble núcleo y memoria RAM de 1.5GB, cuando en el mercado existen teléfonos celulares con cuatro núcleos y 2GB de RAM. De haber tenido ambos componentes, el Galaxy Mega 6.3 estaría en el estrato superior. De igual forma, podemos colocar aquí teléfonos con muchas especificaciones de móviles de media gama plus, siempre y cuando ese celular proporcione innovaciones únicas que marcan hito en el sector. ¿Qué podemos entender como 'innovación única'? Sencillo, una novedad que no encontremos en ningún otro dispositivo, como por ejemplo la cámara fotográfica del Nokia Lumia 1020, con sus 41 megapixeles, tecnología PureView y excelente apertura del diafragma de f/2.2. Eso asigna valor agregado al teléfono.<p></div>
+             <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> iPhone 7 Plus</h1>
+          <div>
+            <img src="imagenes/iphone7.jpg" width"50%" height="50%">
+          </div>
+        </div>
+          </div>
+          <div>
+              <center><h1>GAMA MEDIA</h1></center>
+             <p>Los smartphones de media gama se caracterizan por tener pantallas de calidad, pero de menor tamaño, resolución y profundidad de pixeles por pulgada; en la mayoría de los casos funcionan con una versión anterior a la más actual de su sistema operativo; los procesadores no tienen la potencia de los que encontramos en gamas superiores, y las cámaras y fotográficas generalmente cuentan con menos cantidad de megapíxeles. En esta categoría también situaremos a cierto número de celulares que en su momento fueron considerados de alta gama, pero que se han quedado rezagados por los adelantos que se producen en la telefonía celular. Por ejemplo, ¿dónde colocarías un smartphone con procesador dual-core y velocidad de hasta 1.2 GHz, que además llegó originalmente con sistema operativo Android v2.3.4 Gingerbread, memoria RAM de 1GB y batería de tan sólo 1.650 mAh? Pues bien, esas características corresponden al afamado Samsung Galaxy S II, que salió al mercado como un dispositivo móvil de alta gama en abril de 2011 y fue líder en ventas hasta comienzo del 2012. Pues ese móvil ya no es un celular de alta gama, es de media gama.</p></div>
+             <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> Samsung </h1>
+          <div><center>
+            <img src="imagenes/gamamedia.jpg" width"50%" height="50%"></center>
+          </div>
+        </div>
+          </div>
+          <div>
+              <center><h1>GAMA BAJA</h1></center>
+             <p>En esta categoría distribuiremos los celulares inteligentes con plataformas que no dan soporte a muchas utilidades que tienen los teléfonos de otras gamas. Sus pantallas son de escasas dimensiones y resolución, poca memoria RAM y mínima capacidad de almacenamiento interno, cámaras VGA (no llegan al Megapíxel), menores herramientas, acceso a redes y aplicaciones, entre otros aspectos. Se diferencian de los teléfonos básicos (no inteligentes), por el hecho de permitir funcionalidades que van más allá de llamar y recibir llamadas. La clave de todo es que los smartphones trabajan con un sistema operativo informático móvil, dotado de una interfaz para el acceso a Internet, cuentas de correo electrónico y el ingreso de datos a través de un teclado QWERTY. Permiten instalación de programas, la lectura de documentos en distintos formatos y te ayudan a realizar tareas y organizar tus archivos personales. Están diseñados de manera muy sencilla para la fácil y rápida compenetración del usuario, los materiales de fabricación garantizan durabilidad y la batería generalmente es de gran rendimiento.</p></div>
+             <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+        <h1> Nokia</h1>
+          <div><center>
+            <img src="imagenes/nokia.jpg" width"50%" height="50%"></center>
+          </div>
+          </div>
+          </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+        <div><center>
+           <img src="imagenes/logo.png" width="40" height="40"> </center>
+         </div>
+          <h4>Aplicacion Dos,ZNA</h4>
+        </div>
+        </div>
+        </div>
+
+        
+        
+        
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>COMPAÑIAS QUE OFRECEN TELEFONIA CELULAR</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+        <h1>TELCEL</h1>
+          <div>
+           <p>Telcel </p>
+          </div>
+          <div>
+            <img src="imagenes/telcel.png" width"50%" height="50%">
+          </div>
+        </div>
+        </div>
+        <div data-role="content" align="center">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>AT&T</h1>
+          <div>
+           <p>AT&T</p>
+          </div>
+          <div>
+            <img src="imagenes/att.jpg" width"50%" height="50%">
+          </div>
+        </div>
+        </div>
+        <div data-role="content" align="center">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>NEXTEL</h1>
+          <div>
+           <p>Nextel </p>
+          </div>
+          <div>
+            <img src="imagenes/nextel.jpg" width"50%" height="50%">
+          </div>
+        </div>
+        </div>
+        <div data-role="content" align="center">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>UNEFON</h1>
+          <div>
+           <p>Unefon </p>
+          </div>
+          <div>
+            <img src="imagenes/Unefon.png"  width"50%" height="50%">
+          </div>
+        </div>
+        </div>
+        
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <div><center>
+           <img src="imagenes/logo.png" width="40" height="40"> </center>
+         </div>
+            <h4>Aplicacion Dos, ZNA</h4>
+       </div>
+       </div>
+       
+       
+       
+ </body>
+</html>
